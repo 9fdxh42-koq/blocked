@@ -8,18 +8,18 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <style>
-        /* Style untuk video background */
-        .video-background {
+        /* Style untuk gambar background */
+        .image-background {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Membuat video mengisi seluruh area */
-            z-index: -1; /* Menempatkan video di belakang konten */
+            object-fit: cover; /* Membuat gambar mengisi seluruh area */
+            z-index: -1; /* Menempatkan gambar di belakang konten */
         }
 
-        /* Menyesuaikan container agar tetap terlihat di atas video */
+        /* Menyesuaikan container agar tetap terlihat di atas gambar */
         .container {
             position: relative;
             z-index: 1;
@@ -32,7 +32,7 @@
 
         /* Styling untuk pesan blok */
         .block-message {
-            background: rgba(0, 0, 0, 0.6); /* Transparansi latar belakang untuk kontras dengan video */
+            background: rgba(0, 0, 0, 0.6); /* Transparansi latar belakang untuk kontras dengan gambar */
             padding: 30px;
             border-radius: 10px;
             max-width: 800px;
@@ -102,11 +102,8 @@
     </style>
 </head>
 <body>
-    <!-- Video background -->
-    <video class="video-background" autoplay loop>
-        <source src="assets/video/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <!-- Gambar background -->
+    <img class="image-background" src="assets/images/background.jpg" alt="Background Image">
 
     <div class="container">
         <div class="block-message">
